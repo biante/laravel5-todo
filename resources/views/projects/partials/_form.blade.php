@@ -1,16 +1,11 @@
 <div class="form-group">
     {!! Form::label('name', 'Name:') !!}
-    {!! Form::text('name') !!}
+    {!! Form::text('name',$project->name , array('class' => 'form-control')) !!}
 </div>
 <div class="form-group">
     {!! Form::label('slug', 'Slug:') !!}
-    {!! Form::text('slug') !!}
+    {!! Form::text('slug',$project->slug , array('class' => 'form-control')) !!}
 </div>
-{{--<div class="form-group">
-    {!! Form::label('user_id', 'UserID:') !!}
-    {!! Form::text('user_id', Auth::user()->id) !!}
-</div>
---}}
 {{ Form::hidden('user_id', Auth::user()->id) }}
 <div class="form-group">
     {!! Form::submit($submit_text, ['class'=>'btn primary']) !!}

@@ -1,11 +1,11 @@
 <div class="form-group">
     {!! Form::label('name', 'Name:') !!}
-    {!! Form::text('name', '', array('class' => 'form-control')) !!}
+    {!! Form::text('name', $task->name , array('class' => 'form-control')) !!}
 </div>
 
 <div class="form-group">
     {!! Form::label('slug', 'Slug:') !!}
-    {!! Form::text('slug', '', array('class' => 'form-control')) !!}
+    {!! Form::text('slug', $task->slug , array('class' => 'form-control')) !!}
 </div>
 
 <div class="form-group">
@@ -15,11 +15,11 @@
 
 <div class="form-group">
     {!! Form::label('description', 'Description:') !!}
-    {!! Form::textarea('description', '', array('class' => 'form-control')) !!}
+    {!! Form::textarea('description', $task->description, array('class' => 'form-control')) !!}
 </div>
 <div class="form-group">
     {!! Form::label('expiration_date', 'Expiration Date:') !!}
-    {!! Form::date('expiration_date', '', array('class' => 'form-control')) !!}
+    {!! Form::date('expiration_date', $task->expiration_date, array('class' => 'form-control')) !!}
 </div>
 
 <div class="form-group">

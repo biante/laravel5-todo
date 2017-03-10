@@ -60,8 +60,8 @@
                     </form>
                     <hr>
                     <span>
-                        <p>Admin:  user1@user.user</p>
-                        <p>User:   user2@user.user</p>
+                        <p>Admin:  user1@user.user | pass: 123456</p>
+                        <p>User:   user2@user.user | pass: 123456</p>
                     </span>
                 </div>
             </div>
